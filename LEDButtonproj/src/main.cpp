@@ -10,9 +10,9 @@ void setup()
   pinMode(PIN_BUTTON, INPUT);
 }
 
-void loop1() 
+void loop() 
 {
-  if (digitalRead(PIN_BUTTON == LOW)) //reads the input signal received at PIN 13
+  if (digitalRead(PIN_BUTTON) == LOW) //reads the input signal received at PIN 13
   {
     digitalWrite(PIN_LED, LOW); //Sends a low at PIN 2
   }
@@ -22,7 +22,7 @@ void loop1()
   }
 }
 
-void loop()
+void loop1()
 {
 // for (int i = 0; i < 5; i++)
   {
